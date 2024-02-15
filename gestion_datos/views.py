@@ -2,6 +2,9 @@ from django.shortcuts import render, redirect
 from .models import Categoria, Producto, Cliente
 from .forms import CategoriaForm, ProductoForm, ClienteForm
 
+def pagina_de_inicio(request):
+    return render(request, 'gestion_datos/index.html')
+
 def agregar_categoria(request):
     if request.method == 'POST':
         form = CategoriaForm(request.POST)

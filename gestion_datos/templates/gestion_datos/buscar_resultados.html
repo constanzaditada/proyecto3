@@ -1,20 +1,28 @@
-<h2>Categorías:</h2>
-<ul>
-  {% for categoria in categorias %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Categorías:</h2>
+  <ul>
+    {% for categoria in categorias %}
     <li>{{ categoria.nombre }}</li>
-  {% endfor %}
-</ul>
-
-<h2>Productos:</h2>
-<ul>
-  {% for producto in productos %}
+    {% endfor %}
+  </ul>
+  <h2>Productos:</h2>
+  <ul>
+    {% for producto in productos %}
     <li>{{ producto.nombre }}</li>
-  {% endfor %}
-</ul>
-
-<h2>Clientes:</h2>
-<ul>
-  {% for cliente in clientes %}
+    {% endfor %}
+  </ul>
+  <h2>Clientes:</h2>
+  <ul>
+    {% for cliente in clientes %}
     <li>{{ cliente.nombre }}</li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</body>
+</html>

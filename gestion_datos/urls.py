@@ -6,4 +6,5 @@ urlpatterns = [
     path('agregar_producto/', views.agregar_producto, name='agregar_producto'),
     path('agregar_cliente/', views.agregar_cliente, name='agregar_cliente'),
     path('buscar/', views.buscar, name='buscar'),
+    # Otras rutas aquí...
 ]

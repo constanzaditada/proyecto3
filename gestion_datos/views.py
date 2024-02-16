@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Categoria, Producto, Cliente
 from .forms import CategoriaForm, ProductoForm, ClienteForm
 
-def pagina_de_inicio(request):
+def index(request):
     return render(request, 'gestion_datos/index.html')
 
 def agregar_categoria(request):
